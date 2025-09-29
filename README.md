@@ -1,16 +1,38 @@
-# games_crud_app
+# 🎮 VideoGame App
 
-A new Flutter project.
+VideoGame App é um aplicativo Flutter para listar, adicionar e editar jogos. Ele consome uma API REST para gerenciar os dados dos jogos e exibe prévias de imagens em tempo real.
 
-## Getting Started
+## 🚀 Tecnologias Utilizadas
 
-This project is a starting point for a Flutter application.
+Frontend: Flutter
 
-A few resources to get you started if this is your first Flutter project:
+Backend: API REST (qualquer servidor que você esteja usando)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+HTTP Requests: pacote http
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+State Management: setState simples (pode ser evoluído para Provider, Riverpod etc.)
+
+## 📌 Funcionalidades
+
+Listar todos os jogos disponíveis
+
+Adicionar novos jogos (nome, plataforma, URL da imagem)
+
+Editar jogos existentes
+
+Pré-visualização da imagem ao digitar a URL
+
+Validação de campos obrigatórios
+
+Suporte a feedback visual em caso de erro de carregamento de imagem
+
+## 🛠️ Estrutura da API
+
+Endpoints utilizados:
+
+Método	Endpoint	Descrição
+GET	/games	Lista todos os jogos
+GET	/games/{id}	Buscar jogo por ID
+POST	/games	Criar novo jogo
+PUT	/games/{id}	Atualizar jogo existente
+DELETE	/games/{id}	Deletar jogo
