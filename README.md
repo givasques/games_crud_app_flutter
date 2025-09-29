@@ -10,7 +10,6 @@ Backend: API REST (qualquer servidor que você esteja usando)
 
 HTTP Requests: pacote http
 
-State Management: setState simples (pode ser evoluído para Provider, Riverpod etc.)
 
 ## 📌 Funcionalidades
 
@@ -30,9 +29,10 @@ Suporte a feedback visual em caso de erro de carregamento de imagem
 
 Endpoints utilizados:
 
-Método	Endpoint	Descrição
-GET	/games	Lista todos os jogos
-GET	/games/{id}	Buscar jogo por ID
-POST	/games	Criar novo jogo
-PUT	/games/{id}	Atualizar jogo existente
-DELETE	/games/{id}	Deletar jogo
+| Método | Endpoint      | Descrição                |
+| ------ | ------------- | ------------------------ |
+| GET    | `/games`      | Lista todos os jogos     |
+| GET    | `/games/{id}` | Buscar jogo por ID       |
+| POST   | `/games`      | Criar novo jogo          |
+| PUT    | `/games/{id}` | Atualizar jogo existente |
+| DELETE | `/games/{id}` | Deletar jogo             |
